@@ -11,7 +11,7 @@ const idKabupaten = '1';
 const kecamatanData = JSON.parse(fs.readFileSync(`kecamatan/${idKabupaten}.json`));
 
 
-const idKecamatan = '1'; // Ganti dengan id kecamatan yang sesuai
+const idKecamatan = '1'; 
 const kelurahanData = JSON.parse(fs.readFileSync(`kelurahan/${idKecamatan}.json`));
 
 
