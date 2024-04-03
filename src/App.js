@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+const fs = require('fs');
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const provinsiData = JSON.parse(fs.readFileSync('./public/provinsi.json'));
 
-export default App;
+
+const idProvinsi = '1'; 
+const kabupatenData = JSON.parse(fs.readFileSync(`kabupaten/${idProvinsi}.json`));
+
+
+const idKabupaten = '1'; 
+const kecamatanData = JSON.parse(fs.readFileSync(`kecamatan/${idKabupaten}.json`));
+
+
+const idKecamatan = '1'; // Ganti dengan id kecamatan yang sesuai
+const kelurahanData = JSON.parse(fs.readFileSync(`kelurahan/${idKecamatan}.json`));
+
+
+console.log(provinsiData);
+
